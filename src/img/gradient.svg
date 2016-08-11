@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="100px" height="71px" viewBox="0 0 100 71" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>gradient</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="57.2939116%" fx="50%" fy="57.2939116%" r="32.0548222%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" offset="0.382653061%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="gradient" fill="url(#radialGradient-1)">
+            <path d="M50,47 C77.6142375,47 100,24.6142375 100,-3 C100,-30.6142375 77.6142375,-53 50,-53 C22.3857625,-53 0,-30.6142375 0,-3 C0,24.6142375 22.3857625,47 50,47 Z" id="Oval"></path>
+        </g>
+    </g>
+</svg>

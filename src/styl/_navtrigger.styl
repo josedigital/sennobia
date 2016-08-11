@@ -1,0 +1,63 @@
+.js-navtrigger
+  background-color: #222
+  border: none;
+  border-radius: 50%
+  height: 140px
+  overflow: hidden
+  position: relative
+  text-indent: -200%
+  transition: background .5s
+  width: 140px
+  
+  span
+    background-color: #fff
+    border-radius: 2px
+    content: ''
+    display: block
+    height: 4px
+    left: calc(50% - 22px)
+    position: absolute
+    top: calc(50% - 2px)
+    transition: transform .3s
+    width: 44px
+    
+    &:before,
+    &:after
+      content: ''
+      background-color: #fff
+      border-radius: 2px
+      height: 4px
+      left: calc(50% - 22px)
+      position: absolute
+      transition: transform .3s
+      width: 44px
+    
+    &:before
+      opacity: 1
+      top: -12px
+    &:after
+      top: 12px
+  
+  &:hover
+    background-color: shade(purple, 50%)
+    span
+      // ARROW ----------------------->
+      transform: rotate(360deg)
+      &:before
+        left: -2px
+        top: -7px
+        transform: rotate(-45deg)
+        width: 22px
+      &:after
+        left: -2px
+        top: 7px
+        transform: rotate(45deg)
+        width: 22px
+        
+      // EX --------------------------><
+      // transform: rotate(225deg)
+      // &:before
+      //   opacity: 0
+      // &:after
+      //   transform: rotate(-90deg)
+      //   top: 0

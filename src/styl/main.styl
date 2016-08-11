@@ -1,0 +1,162 @@
+@import "axis"
+
+// variables
+$sans-serif    = 'Montserrat', sans-serif
+$serif         = 'Vollkorn', serif
+
+$sennobia-blue = #d9f0f7
+$green         = #a3bbb5
+$blue          = #17375a
+$light-blue    = #7FB2CC
+$purple        = #3c1239
+$red           = #c84644
+$black = $text-color    = #222222
+$white         = #ffffff
+$light-gray    = #d8d8d8
+$dark-gray     = #999999
+
+$font-base           ?= rem(16px)
+$line-height-base    ?= 1.5
+$space               ?= 30px 
+
+
+// @import "yeticss"
+@import "_base"
+@import "_grid"
+@import 'https://fonts.googleapis.com/css?family=Montserrat|Vollkorn'
+normalize-css()
+border-box-html()
+
+
+body
+  color: $text-color
+  font-family: $serif
+  // debug()
+
+
+h1,h2,h3,h4,h5,h6
+  font-family: $sans-serif
+
+
+
+
+.container-full
+  margin: 0 auto
+  width: 100%
+
+.Button--outlined
+  border-radius: 5px
+  border-width: 2px
+  border-style: solid
+  font-family: $sans-serif
+  padding: 15px 20px
+  &:hover
+    background-color: rgba($white, 0.2)
+
+
+
+
+// header
+header
+  background-color: $white
+  position: fixed
+  width: 100%
+  z-index: 10
+nav
+  padding: 10px 0
+  .Brand
+    background: url("../img/senn-logo.svg") center center no-repeat
+    background-size: 150px 150px
+    height: 130px
+    left: calc(50% - 100px)
+    position: fixed
+    width: 200px
+  ul
+    align-items: center
+    font-family: $sans-serif
+    font-size: rem(16px)
+    height: 50px
+    margin: 0
+    padding: 0
+    position: relative
+    uppercase()
+    li
+      list-style: none
+      text-align: center
+      a
+        color: lighten($blue, 20%)
+        display: block
+        padding: 10px
+        &:hover
+          color: lighten($blue, 60%)
+
+
+
+// hero
+.Hero
+  background: url('../img/gradient.svg'), url('../img/hero-image.jpg')
+  background-attachment: fixed
+  background-position: center 70px, center -200px
+  background-repeat: no-repeat
+  background-size: 600px, cover
+  height: 500px
+  &:before
+    background-color: rgba($red, 0.9)
+    content: ''
+    display: block
+    height: 500px
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+
+
+
+// Products
+.Product
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  border-left: 10px solid #fff
+  border-right: 10px solid #fff
+  color: $white
+  height: 40vh
+  max-height: rem(400px)
+  min-height: rem(330px)
+  padding: 4em
+  position: relative
+  text-align: center
+  & > *
+    position: relative
+  &:before
+    content: ''
+    display: block
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+  &__title
+    font-size: rem(24px)
+    font-weight: normal
+    margin-bottom: 2em
+    uppercase()
+  a
+    color: $white
+.full
+  margin-top: 10px
+
+.Regenerating
+  background-image: url('../img/products/regen.jpg')
+  border-right: 5px solid #fff
+  &:before
+    background: rgba($green, 0.3)
+.Rejuvenating
+  background-image: url('../img/products/rejuv.jpg')
+  border-left: 5px solid #fff
+  &:before
+    background: rgba($light-blue, 0.3)
+.Eye
+  background-image: url('../img/products/eye.jpg')
+  &:before
+    background: rgba($blue, 0.3)

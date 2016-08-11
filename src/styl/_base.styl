@@ -1,0 +1,75 @@
+/*--------------------------------------------------------------------
+*
+* $BASE
+*
+--------------------------------------------------------------------*/
+
+*, *:after, *:before
+  box-sizing: border-box
+
+html
+  height: 100%
+
+body
+  min-height: 100%
+  font-family: $serif
+  font-size: $font-base
+  line-height: $line-height-base 
+  color: $text-color
+  text-rendering: optimizeSpeed
+
+p
+  margin-top: 0
+  margin-bottom: $space
+
+//- Selection highlight
+
+::-moz-selection
+  background-color: $sennobia-blue
+  color: $blue
+
+::selection
+  background-color: $sennobia-blue
+  color: $blue
+
+//- Links
+
+a
+  color: $blue
+  cursor: pointer
+  text-decoration: none
+  transition: all 0.3s
+
+  &:focus
+    outline: none
+
+  &:hover
+    color: darken($blue, 20%)
+
+//- Helper classes
+
+uppercase()
+  text-transform: uppercase
+
+.pull-left
+  float: left
+
+.pull-right
+  float: right
+
+.hide
+  display: none
+
+.cf
+  &:before,
+  &:after
+    content: " "
+    display: table
+
+  &:after
+    clear: both
+
+//- Images and media
+
+img, iframe, video
+  max-width: 100%
