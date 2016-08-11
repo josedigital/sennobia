@@ -49,9 +49,15 @@ h1,h2,h3,h4,h5,h6
   border-width: 2px
   border-style: solid
   font-family: $sans-serif
+  margin-right: 10px
   padding: 15px 20px
   &:hover
     background-color: rgba($white, 0.2)
+  &:last-of-type
+    margin-left: 0
+  
+
+  
 
 
 
@@ -135,14 +141,23 @@ nav
     left: 0
     position: absolute
     top: 0
+    transition: background 0.3s
     width: 100%
   &__title
     font-size: rem(24px)
     font-weight: normal
     margin-bottom: 2em
     uppercase()
+  
   a
     color: $white
+    &.Button__purchase
+      background-color: rgba($light-blue, 0.75)
+      color: rgba($white, 0.8)
+      &:hover
+        background-color: rgba($sennobia-blue, 0.95)
+        color: lighten($blue, 60%)
+        border-color: $white
 .full
   margin-top: 10px
 
@@ -150,13 +165,22 @@ nav
   background-image: url('../img/products/regen.jpg')
   border-right: 5px solid #fff
   &:before
-    background: rgba($green, 0.3)
+    background: rgba($green, 0.4)
+  &:hover
+    &:before
+      background-color: rgba($green, 0.75)
 .Rejuvenating
   background-image: url('../img/products/rejuv.jpg')
   border-left: 5px solid #fff
   &:before
-    background: rgba($light-blue, 0.3)
+    background: rgba($light-blue, 0.4)
+  &:hover
+    &:before
+      background-color: rgba($light-blue, 0.75)
 .Eye
   background-image: url('../img/products/eye.jpg')
   &:before
-    background: rgba($blue, 0.3)
+    background: rgba($blue, 0.4)
+  &:hover
+    &:before
+      background-color: rgba($blue, 0.75)

@@ -7,7 +7,11 @@ $grid-gutter-horizontal ?= $grid-gutter
 
 .container
   margin: 0 auto
-  width: 70%
+  width: 100%
+  +above(700px)
+    width: 80%
+  +above(900px)
+    width: 70%
 
 
 .flex 
