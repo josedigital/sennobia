@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Title Site
+    title Sennobia Face
     meta(charset='UTF-8')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='description' content="meta desc")
@@ -25,28 +25,40 @@ html
             a(href="") Contact
 
 
-    section.Hero
-      &nbsp;
+    .Hero
+      .Hero__content
+        h1.Brand.animate.fade-in-down-big.delay-1 Sennobia
+          span Face
+        h2.Tagline.animate.fade-in.delay-3 Love your skin
 
     
     section.flex.Products
       .Product.Regenerating.full.half-800
-        h3.Product__title Regenerating<br>Cream
-        .Button__group
-          a.Button--outlined.Button__purchase(href="") Purchase
-          a.Button--outlined(href="") More Info
+        .Product__image
+          img(src="img/products/regen.jpg", alt="Regenerating Cream")
+        .Product__content
+          h3.Product__title Regenerating<br>Cream
+          .Button__group
+            a.Button--outlined.Button__purchase(href="") Purchase
+            a.Button--outlined(href="") More Info
 
       .Product.Rejuvenating.full.half-800
-        h3.Product__title Rejuvenating<br>Cream
-        .Button__group
-          a.Button--outlined.Button__purchase(href="") Purchase
-          a.Button--outlined(href="") More Info
+        .Product__image
+          img(src="img/products/rejuv.jpg", alt="Rejuvenating Cream")
+        .Product__content
+          h3.Product__title Rejuvenating<br>Cream
+          .Button__group
+            a.Button--outlined.Button__purchase(href="") Purchase
+            a.Button--outlined(href="") More Info
 
       .Product.Eye.full
-        h3.Product__title Eye Renewal<br>Cream
-        .Button__group
-          a.Button--outlined.Button__purchase(href="") Purchase
-          a.Button--outlined(href="") More Info
+        .Product__image
+          img(src="img/products/eye.jpg", alt="Eye Renewal Cream")
+        .Product__content
+          h3.Product__title Eye Renewal<br>Cream
+          .Button__group
+            a.Button--outlined.Button__purchase(href="") Purchase
+            a.Button--outlined(href="") More Info
 
     
     section.container.Info
@@ -89,5 +101,5 @@ html
             p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt quas quos deleniti voluptatum consectetur distinctio, voluptatibus tempora, dicta laboriosam dolor earum sapiente tempore debitis, similique quo vero repudiandae cum voluptatem?
 
   
-
+    script(src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous")
     script(type="text/javascript", src="js/main.js")
