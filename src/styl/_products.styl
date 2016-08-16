@@ -1,0 +1,84 @@
+// Products
+.Product
+  background-position: center center
+  background-repeat: no-repeat
+  background-size: cover
+  // border-left: 10px solid #fff
+  // border-right: 10px solid #fff
+  color: $white
+  height: 40vh
+  max-height: rem(400px)
+  min-height: rem(330px)
+  overflow: hidden
+  padding: 4em
+  position: relative
+  text-align: center
+  transition: all 0.5s ease-in
+  & > *
+    position: relative
+  &:before
+    content: ''
+    display: block
+    height: 100%
+    left: 0
+    position: absolute
+    top: 0
+    transition: background 0.3s
+    width: 100%
+    z-index: 5
+  &:hover
+    .Product__image
+      transform: scale(1.5)
+  &__content
+    position: relative
+    z-index: 10
+  &__image
+    left: 0
+    position: absolute
+    right: 0
+    top: 0
+    transition: $ease-out-quad
+    z-index: 1
+  &__title
+    font-size: rem(24px)
+    font-weight: normal
+    margin-bottom: 2em
+    uppercase()
+  
+  a
+    color: $white
+    &.Button__purchase
+      background-color: rgba($light-blue, 0.75)
+      color: rgba($white, 0.8)
+      &:hover
+        background-color: rgba($sennobia-blue, 0.95)
+        color: lighten($blue, 60%)
+        border-color: $white
+
+
+
+
+.full
+  // margin-top: 10px
+
+.Regenerating
+  // border-right: 5px solid #fff
+  &:before
+    background: rgba($green, 0.75)
+  &:hover
+    &:before
+      background-color: rgba($green, 0.4)
+
+.Rejuvenating
+  // border-left: 5px solid #fff
+  &:before
+    background: rgba($light-blue, 0.75)
+  &:hover
+    &:before
+      background-color: rgba($light-blue, 0.4)
+.Eye
+  &:before
+    background: rgba($blue, 0.75)
+  &:hover
+    &:before
+      background-color: rgba($blue, 0.4)

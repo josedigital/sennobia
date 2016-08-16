@@ -1,0 +1,40 @@
+// header
+header
+  background-color: $white
+  position: fixed
+  width: 100%
+  z-index: 15
+nav
+  padding: 10px 0
+  .Brand
+    background: url("../img/senn-logo.svg") center center no-repeat
+    background-size: 150px 150px
+    height: 130px
+    left: calc(50% - 100px)
+    position: fixed
+    transition: all 0.3s
+    width: 200px
+    &.on-scroll
+      background-size: 70px 70px
+      height: 50px
+      
+  ul
+    align-items: center
+    font-family: $sans-serif
+    font-size: rem(16px)
+    height: 50px
+    margin: 0
+    padding: 0
+    position: relative
+    uppercase()
+    +above(600px)
+      @extend .flex
+    li
+      list-style: none
+      text-align: center
+      a
+        color: lighten($blue, 20%)
+        display: block
+        padding: 10px
+        &:hover
+          color: lighten($blue, 60%)

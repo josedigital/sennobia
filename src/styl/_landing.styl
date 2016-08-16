@@ -1,0 +1,23 @@
+.landing-page
+  .Hero
+    background: url('../img/hero-image.jpg')
+    background-attachment: fixed
+    background-position: center -200px
+    background-repeat: no-repeat
+    background-size: cover
+    height: 100vh
+    &:before
+      height: 100vh
+    .Hero__content
+      width: 100%
+      +below(600px)
+        padding: 0
+      p
+        // background-color: rgba(0,0,0,0.25)
+        color: #fff
+        font-size: rem(32px)
+        margin: 0 auto
+        padding: 2em
+        width: 50%
+        +below(600px)
+          width: 100%
